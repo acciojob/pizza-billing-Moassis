@@ -72,6 +72,5 @@ public class Pizza {
 
         this.bill += "Total Price: " + total + "\n";
         return this.bill;
-        // Rommel
     }
 }
