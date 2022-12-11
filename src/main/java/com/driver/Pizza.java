@@ -46,31 +46,32 @@ public class Pizza {
     public String getBill() {
         // your code goes here
         if (isVeg == true) {
-            this.bill = "Base Price Of The Pizza: 300" + "\n";
+            bill = "Base Price Of The Pizza: 300" + "\n";
             total += 300;
         } else {
-            this.bill = "Base Price Of The Pizza: 400" + "\n";
+            bill = "Base Price Of The Pizza: 400" + "\n";
             total += 400;
         }
         if (cheesePrice >= 80) {
-            this.bill += "Extra Cheese Added: 80" + "\n";
+            bill += "Extra Cheese Added: 80" + "\n";
             total += 80;
         }
 
         if (isVeg == true && toppingPrice >= 70) {
-            this.bill += "Extra Toppings Added: 70" + "\n";
+            bill += "Extra Toppings Added: 70" + "\n";
             total += 70;
         } else if (isVeg == false && toppingPrice >= 120) {
-            this.bill += "Extra Toppings Added: 120" + "\n";
+            bill += "Extra Toppings Added: 120" + "\n";
             total += 120;
         }
 
         if (takeAwayPrice >= 20) {
-            this.bill += "Paperbag Added: 20" + "\n";
+            bill += "Paperbag Added: 20" + "\n";
             total += 20;
         }
 
-        this.bill += "Total Price: " + total + "\n";
-        return this.bill;
+        bill += "Total Price: " + total + "\n";
+        total = 0;
+        return bill;
     }
 }
