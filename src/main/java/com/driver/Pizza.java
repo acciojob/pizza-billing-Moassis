@@ -15,12 +15,8 @@ public class Pizza {
         // your code goes here
         if (isVeg == true) {
             this.price = 300;
-            this.cheesePrice = 80;
-            this.toppingPrice = 70;
         } else {
             this.price = 400;
-            this.cheesePrice = 80;
-            this.toppingPrice = 120;
         }
     }
 

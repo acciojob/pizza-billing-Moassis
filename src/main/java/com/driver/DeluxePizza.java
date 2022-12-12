@@ -6,11 +6,11 @@ public class DeluxePizza extends Pizza {
         super(isVeg);
         // your code goes here
         if (isVeg == true) {
-            this.cheesePrice = 0;
-            this.toppingPrice = 0;
+            this.cheesePrice = 80;
+            this.toppingPrice = 70;
         } else {
-            this.cheesePrice = 0;
-            this.toppingPrice = 0;
+            this.cheesePrice = 80;
+            this.toppingPrice = 120;
         }
     }
 }
