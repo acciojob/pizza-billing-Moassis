@@ -5,18 +5,22 @@ public class Pizza {
     private int price;
     private Boolean isVeg;
     private String bill;
-    private int cheesePrice = 0;
-    private int total = 0;
-    private int toppingPrice = 0;
-    private int takeAwayPrice = 0;
+    protected int cheesePrice = 0;
+    protected int total = 0;
+    protected int toppingPrice = 0;
+    protected int takeAwayPrice = 0;
 
     public Pizza(Boolean isVeg) {
         this.isVeg = isVeg;
         // your code goes here
         if (isVeg == true) {
             this.price = 300;
+            this.cheesePrice = 80;
+            this.toppingPrice = 70;
         } else {
             this.price = 400;
+            this.cheesePrice = 80;
+            this.toppingPrice = 120;
         }
     }
 
@@ -48,7 +52,7 @@ public class Pizza {
         if (isVeg == true) {
             bill = "Base Price Of The Pizza: 300" + "\n";
             total += 300;
-        } else {
+        } else if (isVeg == false) {
             bill = "Base Price Of The Pizza: 400" + "\n";
             total += 400;
         }
